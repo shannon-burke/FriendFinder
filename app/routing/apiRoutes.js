@@ -1,4 +1,4 @@
-var friendList = require("..data/friend.js");
+var friendList = require("../data/friends");
 
 module.exports = function (app) {
     app.get("/api/friends", function (req, res) {
@@ -20,7 +20,7 @@ module.exports = function (app) {
             scoresArray.push(scoresDiff);
         }
 
-        for (var i = 0; i < scoresArray.length.length; i++) {
+        for (var i = 0; i < scoresArray.length; i++) {
             if (scoresArray[i] <= scoresArray[bestFriend]) {
                 bestFriend = i;
             }
