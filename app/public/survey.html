@@ -23,9 +23,10 @@
 <body>
 
     <div class="container">
-        <div class="col-md-8">
+        <div class="col-md-8 form-group">
             <h1>FriendFinder Quiz</h1>
             <hr>
+            <h2>What is your name?</h2>
             <h2>I crave adventure.</h2>
             <select class="chosen-select" id="q1">
                 <option value=""></option>
@@ -127,7 +128,25 @@
     <script type="text/javascript">
         $("#submit").on("click", function () {
             event.preventDefault();
+            $("#submit").on("click", function () {
+                var userProfile = {
+                    name: $("#userName").val().trim(),
+                    scores: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
 
+                    ]
+                };
+
+
+            })
         })
     </script>
 
