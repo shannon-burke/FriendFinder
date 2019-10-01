@@ -9,118 +9,162 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+
+    <div id="background-image">
+        <img src="images/logo.png" alt="Starfleet Emblem" id="starfleet-logo">
+    </div>
+
+
+
     <div class="container">
-        <div class="col-md-8 form-group">
-            <h1>FriendFinder Quiz</h1>
-            <hr>
-            <h2>What is your name?</h2>
-            <h2>I crave adventure.</h2>
-            <select class="chosen-select" id="q1">
-                <option value=""></option>
-                <option value="1">1 (strongly disagree)</option>
-                <option value="2">2 (somewhat disagree)</option>
-                <option value="3">3 (neutal)</option>
-                <option value="4">4 (somewhat agree)</option>
-                <option value="5">5 (strongly agree)</option>
-            </select>
+        <form>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-12 col-md-8" id="survey-main-content">
+                    <h1>FriendFinder Quiz</h1>
+                    <hr>
+                    <h2>What is your name?</h2>
 
-            <h2>I follow orders well.</h2>
-            <select class="chosen-select" id="q2">
-                <option value=""></option>
-                <option value="1">1 (strongly disagree)</option>
-                <option value="2">2 (somewhat disagree)</option>
-                <option value="3">3 (neutal)</option>
-                <option value="4">4 (somewhat agree)</option>
-                <option value="5">5 (strongly agree)</option>
-            </select>
+                    <input type="name" class="form-control" id="user-name" placeholder="Enter your name here">
 
-            <h2>I am content to play a support role while others take the lead.</h2>
-            <select class="chosen-select" id="q3">
-                <option value=""></option>
-                <option value="1">1 (strongly disagree)</option>
-                <option value="2">2 (somewhat disagree)</option>
-                <option value="3">3 (neutal)</option>
-                <option value="4">4 (somewhat agree)</option>
-                <option value="5">5 (strongly agree)</option>
-            </select>
+                    <div class="form-group">
+                        <h2>I crave adventure.</h2>
+                        <select class="chosen-select" id="q1">
+                            <option value=""></option>
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2 (somewhat disagree)</option>
+                            <option value="3">3 (neutal)</option>
+                            <option value="4">4 (somewhat agree)</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
+                    </div>
 
-            <h2>I sometimes act before thinking.</h2>
-            <select class="chosen-select" id="q4">
-                <option value=""></option>
-                <option value="1">1 (strongly disagree)</option>
-                <option value="2">2 (somewhat disagree)</option>
-                <option value="3">3 (neutal)</option>
-                <option value="4">4 (somewhat agree)</option>
-                <option value="5">5 (strongly agree)</option>
-            </select>
 
-            <h2>I consider intelligence one of my most important qualities.</h2>
-            <select class="chosen-select" id="q5">
-                <option value=""></option>
-                <option value="1">1 (strongly disagree)</option>
-                <option value="2">2 (somewhat disagree)</option>
-                <option value="3">3 (neutal)</option>
-                <option value="4">4 (somewhat agree)</option>
-                <option value="5">5 (strongly agree)</option>
-            </select>
 
-            <h2>I consider bravery one of my most important qualities.</h2>
-            <select class="chosen-select" id="q6">
-                <option value=""></option>
-                <option value="1">1 (strongly disagree)</option>
-                <option value="2">2 (somewhat disagree)</option>
-                <option value="3">3 (neutal)</option>
-                <option value="4">4 (somewhat agree)</option>
-                <option value="5">5 (strongly agree)</option>
-            </select>
+                    <div class="form-group">
+                        <h2>I follow orders well.</h2>
+                        <select class="chosen-select" id="q2">
+                            <option value=""></option>
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2 (somewhat disagree)</option>
+                            <option value="3">3 (neutal)</option>
+                            <option value="4">4 (somewhat agree)</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
+                    </div>
 
-            <h2>I often take care of or look after people</h2>
-            <select class="chosen-select" id="q7">
-                <option value=""></option>
-                <option value="1">1 (strongly disagree)</option>
-                <option value="2">2 (somewhat disagree)</option>
-                <option value="3">3 (neutal)</option>
-                <option value="4">4 (somewhat agree)</option>
-                <option value="5">5 (strongly agree)</option>
-            </select>
+                    <div class="form-group">
+                        <h2>I am content to play a support role while others take the lead.</h2>
+                        <select class="chosen-select" id="q3">
+                            <option value=""></option>
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2 (somewhat disagree)</option>
+                            <option value="3">3 (neutal)</option>
+                            <option value="4">4 (somewhat agree)</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
+                    </div>
 
-            <h2>I am more of an introvert</h2>
-            <select class="chosen-select" id="q8">
-                <option value=""></option>
-                <option value="1">1 (strongly disagree)</option>
-                <option value="2">2 (somewhat disagree)</option>
-                <option value="3">3 (neutal)</option>
-                <option value="4">4 (somewhat agree)</option>
-                <option value="5">5 (strongly agree)</option>
-            </select>
+                    <div class="form-group">
+                        <h2>I sometimes act before thinking.</h2>
+                        <select class="chosen-select" id="q4">
+                            <option value=""></option>
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2 (somewhat disagree)</option>
+                            <option value="3">3 (neutal)</option>
+                            <option value="4">4 (somewhat agree)</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
+                    </div>
 
-            <h2>I am a bit of a black sheep</h2>
-            <select class="chosen-select" id="q9">
-                <option value=""></option>
-                <option value="1">1 (strongly disagree)</option>
-                <option value="2">2 (somewhat disagree)</option>
-                <option value="3">3 (neutal)</option>
-                <option value="4">4 (somewhat agree)</option>
-                <option value="5">5 (strongly agree)</option>
-            </select>
+                    <div class="form-group">
+                        <h2>I consider intelligence one of my most important qualities.</h2>
+                        <select class="chosen-select" id="q5">
+                            <option value=""></option>
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2 (somewhat disagree)</option>
+                            <option value="3">3 (neutal)</option>
+                            <option value="4">4 (somewhat agree)</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
+                    </div>
 
-        </div>
-        <a href="#" id="submit"><button type="button" class="btn btn-lg btn-primary">
-                <h4>Submit</h4>
-            </button></a>
+                    <div class="form-group">
+                        <h2>I consider bravery one of my most important qualities.</h2>
+                        <select class="chosen-select" id="q6">
+                            <option value=""></option>
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2 (somewhat disagree)</option>
+                            <option value="3">3 (neutal)</option>
+                            <option value="4">4 (somewhat agree)</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>I often take care of or look after people</h2>
+                        <select class="chosen-select" id="q7">
+                            <option value=""></option>
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2 (somewhat disagree)</option>
+                            <option value="3">3 (neutal)</option>
+                            <option value="4">4 (somewhat agree)</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>I am more of an introvert</h2>
+                        <select class="chosen-select" id="q8">
+                            <option value=""></option>
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2 (somewhat disagree)</option>
+                            <option value="3">3 (neutal)</option>
+                            <option value="4">4 (somewhat agree)</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>I am a bit of a black sheep</h2>
+                        <select class="chosen-select" id="q9">
+                            <option value=""></option>
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2 (somewhat disagree)</option>
+                            <option value="3">3 (neutal)</option>
+                            <option value="4">4 (somewhat agree)</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
+                    </div>
+
+
+                    <button type="button" id="submit" class="btn btn-lg btn-primary">
+                        <h4>Submit</h4>
+                    </button>
+                </div>
+                <div class="col"></div>
+            </div>
+        </form>
     </div>
 
     <div class="modal fade" id="match-modal" tabindex="-1" role="dialog">
@@ -147,7 +191,7 @@
             event.preventDefault();
 
             var userProfile = {
-                name: $("#userName").val().trim(),
+                name: $("#user-name").val().trim(),
                 scores: [
                     $("#q1").val(),
                     $("#q2").val(),
@@ -160,13 +204,14 @@
                     $("#q9").val()
                 ]
             };
-
-            $.post("/api/friends", user, function (response) {
+            //console.log(userProfile);
+            $.post("/api/friends", userProfile, function (response) {
                 $("#match-name").text(response.name);
                 $('#match-modal').modal('show');
             });
 
-            console.log(response);
+            //console.log(response);
+            //console.log(req)
 
         })
     </script>
