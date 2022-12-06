@@ -4,7 +4,7 @@
   "description": "personality quiz app that matches user with star trek characters",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "path": "^0.12.7"
   },
   "devDependencies": {},
